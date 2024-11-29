@@ -27,6 +27,7 @@ public class CardRepository : ICardRepository
 
     public bool MinusMoney(string cartNo, float money)
     {
+
         var Cart = GetCardByCardNo(cartNo);
 
         if (Cart.Balance < money)
@@ -34,6 +35,7 @@ public class CardRepository : ICardRepository
             return false;
         }
         Cart.Balance -= money;
+        Cart.DailyTransferAmount += money;
         _context.SaveChanges();
         return true;
     }
@@ -53,4 +55,13 @@ public class CardRepository : ICardRepository
         Cart.IsActive = false; 
         _context.SaveChanges();
     }
+    public void UpdateCardLimits(Card updatedCard)
+    {
+        var card = GetCardByCardNo(updatedCard.CardNumber);
+            card.TodayTransaction = updatedCard.TodayTransaction;
+            card.DailyTransferAmount = updatedCard.DailyTransferAmount;
+            _context.Cards.Update(card); 
+            _context.SaveChanges();
+    }
+
 }

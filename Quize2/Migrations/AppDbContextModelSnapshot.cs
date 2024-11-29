@@ -30,7 +30,7 @@ namespace Quize2.Migrations
                     b.Property<float>("Balance")
                         .HasColumnType("real");
 
-                    b.Property<float>("DailyTransferAmount")
+                    b.Property<float?>("DailyTransferAmount")
                         .HasColumnType("real");
 
                     b.Property<string>("HolderName")
@@ -43,6 +43,9 @@ namespace Quize2.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TodayTransaction")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("CardNumber");
 

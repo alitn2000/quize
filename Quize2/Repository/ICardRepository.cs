@@ -12,4 +12,5 @@ public interface ICardRepository
     Card? GetCardByCardNo(string cardNo);
     bool LogIn(string cardNo, string pass);
     void UpdateCardStatus(string cardNo);
+    void UpdateCardLimits(Card updatedCard);
 }

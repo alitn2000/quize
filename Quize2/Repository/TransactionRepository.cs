@@ -6,6 +6,7 @@ namespace Quize2.Repository;
 public class TransactionRepository
 {
     private readonly AppDbContext _context = new AppDbContext();
+    private readonly CardRepository _cardRepository = new CardRepository();
     public void AddTransaction(Transaction trans)
     {
         _context.Transactions.Add(trans);

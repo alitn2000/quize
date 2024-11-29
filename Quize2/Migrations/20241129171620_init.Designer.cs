@@ -12,7 +12,7 @@ using Quize2.Db;
 namespace Quize2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241129122735_init")]
+    [Migration("20241129171620_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -33,7 +33,7 @@ namespace Quize2.Migrations
                     b.Property<float>("Balance")
                         .HasColumnType("real");
 
-                    b.Property<float>("DailyTransferAmount")
+                    b.Property<float?>("DailyTransferAmount")
                         .HasColumnType("real");
 
                     b.Property<string>("HolderName")
@@ -46,6 +46,9 @@ namespace Quize2.Migrations
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TodayTransaction")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("CardNumber");
 

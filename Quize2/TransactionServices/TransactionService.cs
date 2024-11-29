@@ -15,26 +15,49 @@ public class TransactionService
 
     public bool Transfer(string source, string destination, float money)
     {
+        var sourceCard = _cardRepository.GetCardByCardNo(source);
 
-
-        bool minus = _cardRepository.MinusMoney(source, money );
-        if(minus == false)
+        if (sourceCard.TodayTransaction == null || sourceCard.TodayTransaction.Value.Date != DateTime.Now.Date)
         {
-            Transaction transfail = new Transaction() { Amount = money, SourceCardNumber = source, DestinationCardNumber = destination, IsSuccessful = false, TransactionDate = DateTime.Now };
-            _transactionRepository.AddTransaction( transfail );
-            return false;
+            sourceCard.DailyTransferAmount = 0;
+            sourceCard.TodayTransaction = DateTime.Now;
         }
-        bool plus = _cardRepository.PlusMoney(destination, money );
-
-        if (plus == false)
         {
-            Transaction transfail2 = new Transaction() { Amount = money, SourceCardNumber = source, DestinationCardNumber = destination, IsSuccessful = false, TransactionDate = DateTime.Now };
-            _transactionRepository.AddTransaction(transfail2);
-            return false;
+            sourceCard.DailyTransferAmount = 0; 
+            sourceCard.TodayTransaction = DateTime.Now; 
         }
 
-        Transaction transaction = new Transaction() { Amount = money, SourceCardNumber = source,DestinationCardNumber = destination, IsSuccessful =true, TransactionDate = DateTime.Now };
+        if (money > 250 || sourceCard.DailyTransferAmount + money > 250)
+        {
+            Console.WriteLine("Transfer amount error (more than 250)!!!");
+            return false;
+        }
+
+        bool minus = _cardRepository.MinusMoney(source, money);
+        if (!minus)
+        {
+            var failedTransaction = new Transaction
+            {Amount = money,SourceCardNumber = source,DestinationCardNumber = destination,IsSuccessful = false,TransactionDate = DateTime.Now};
+            _transactionRepository.AddTransaction(failedTransaction);
+            return false;
+        }
+
+        bool plus = _cardRepository.PlusMoney(destination, money);
+        if (!plus)
+        {
+            _cardRepository.PlusMoney(source, money);
+            var failedTransaction = new Transaction
+            {Amount = money,SourceCardNumber = source,IsSuccessful = false,DestinationCardNumber = destination,TransactionDate = DateTime.Now};
+            _transactionRepository.AddTransaction(failedTransaction);
+            return false;
+        }
+
+        var transaction = new Transaction
+        {Amount = money,SourceCardNumber = source,DestinationCardNumber = destination,IsSuccessful = true,TransactionDate = DateTime.Now};
         _transactionRepository.AddTransaction(transaction);
+
+        sourceCard.DailyTransferAmount += money;
+        _cardRepository.UpdateCardLimits(sourceCard);
         return true;
     }
     public bool CheckCard(string cartNo)

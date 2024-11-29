@@ -20,7 +20,8 @@ namespace Quize2.Migrations
                     Balance = table.Column<float>(type: "real", nullable: false),
                     IsActive = table.Column<bool>(type: "bit", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DailyTransferAmount = table.Column<float>(type: "real", nullable: false)
+                    DailyTransferAmount = table.Column<float>(type: "real", nullable: true),
+                    TodayTransaction = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {

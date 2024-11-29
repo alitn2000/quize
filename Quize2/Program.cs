@@ -8,7 +8,6 @@ Card card = null;
 int count = 0;
 bool login = false;
 
-// Login Loop
 while (count < 3)
 {
     Console.WriteLine("Please Log In First:");
@@ -38,10 +37,12 @@ while (count < 3)
     var password = Console.ReadLine();
 
     bool isValidUser = _cardService.UserExist(cardNo, password);
-    if (!isValidUser)
+    if (isValidUser == false)
     {
         count++;
         Console.WriteLine($"Incorrect password! Attempts left: {3 - count}");
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
         if (count >= 3)
         {
             card = _cardService.GetCard(cardNo);
@@ -58,14 +59,12 @@ while (count < 3)
         continue;
     }
 
-    // Login Successful
     card = _cardService.GetCard(cardNo);
     if (card != null && card.IsActive)
     {
         login = true;
     }
 
-    // Main Menu Loop
     while (login)
     {
         Console.Clear();
