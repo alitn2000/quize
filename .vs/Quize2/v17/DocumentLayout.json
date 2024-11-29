@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|solutionrelative:quize2\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Migrations\\20241129122735_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quize2\\Migrations\\20241129122735_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|d:\\c#\\hw\u0060s\\quize2\\quize2\\cardservices\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|solutionrelative:quize2\\cardservices\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,6 +45,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|d:\\c#\\hw\u0060s\\quize2\\quize2\\repository\\icardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|solutionrelative:quize2\\repository\\icardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|d:\\c#\\hw\u0060s\\quize2\\quize2\\migrations\\20241129122735_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13BD1C87-B3FD-404A-AD69-28D61465D5DA}|Quize2\\Quize2.csproj|solutionrelative:quize2\\migrations\\20241129122735_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "20241129122735_init.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Migrations\\20241129122735_init.cs",
               "RelativeDocumentMoniker": "Quize2\\Migrations\\20241129122735_init.cs",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Quize2\\Migrations\\20241129122735_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T12:27:35.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T12:27:35.927Z"
             },
             {
               "$type": "Document",
@@ -85,14 +84,14 @@
               "RelativeDocumentMoniker": "Quize2\\Program.cs",
               "ToolTip": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Program.cs",
               "RelativeToolTip": "Quize2\\Program.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAqwMYAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAANIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T05:29:54.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "CardRepository.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Repository\\CardRepository.cs",
               "RelativeDocumentMoniker": "Quize2\\Repository\\CardRepository.cs",
@@ -100,12 +99,11 @@
               "RelativeToolTip": "Quize2\\Repository\\CardRepository.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAcwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:30:02.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:30:02.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\TransactionServices\\TransactionService.cs",
               "RelativeDocumentMoniker": "Quize2\\TransactionServices\\TransactionService.cs",
@@ -113,12 +111,11 @@
               "RelativeToolTip": "Quize2\\TransactionServices\\TransactionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:17:44.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:17:44.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Card.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Entites\\Card.cs",
               "RelativeDocumentMoniker": "Quize2\\Entites\\Card.cs",
@@ -126,12 +123,11 @@
               "RelativeToolTip": "Quize2\\Entites\\Card.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T05:32:19.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T05:32:19.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "TransactionRepository.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Repository\\TransactionRepository.cs",
               "RelativeDocumentMoniker": "Quize2\\Repository\\TransactionRepository.cs",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "Quize2\\Repository\\TransactionRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:15:03.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:15:03.735Z"
             },
             {
               "$type": "Document",
@@ -152,12 +147,11 @@
               "RelativeToolTip": "Quize2\\Result.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:17:45.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:17:45.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Transaction.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Entites\\Transaction.cs",
               "RelativeDocumentMoniker": "Quize2\\Entites\\Transaction.cs",
@@ -165,12 +159,11 @@
               "RelativeToolTip": "Quize2\\Entites\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T05:36:43.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T05:36:43.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CardService.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\CardServices\\CardService.cs",
               "RelativeDocumentMoniker": "Quize2\\CardServices\\CardService.cs",
@@ -178,12 +171,11 @@
               "RelativeToolTip": "Quize2\\CardServices\\CardService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAUwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:30:29.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:30:29.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Db\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Quize2\\Db\\AppDbContext.cs",
@@ -191,12 +183,11 @@
               "RelativeToolTip": "Quize2\\Db\\AppDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T10:25:29.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T10:25:29.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "TransactionConfig.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\InferaStructure\\TransactionConfig.cs",
               "RelativeDocumentMoniker": "Quize2\\InferaStructure\\TransactionConfig.cs",
@@ -204,12 +195,11 @@
               "RelativeToolTip": "Quize2\\InferaStructure\\TransactionConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T10:27:37.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T10:27:37.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ICardRepository.cs",
               "DocumentMoniker": "D:\\c#\\HW\u0060S\\Quize2\\Quize2\\Repository\\ICardRepository.cs",
               "RelativeDocumentMoniker": "Quize2\\Repository\\ICardRepository.cs",
@@ -217,8 +207,7 @@
               "RelativeToolTip": "Quize2\\Repository\\ICardRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T07:35:01.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T07:35:01.501Z"
             }
           ]
         }
