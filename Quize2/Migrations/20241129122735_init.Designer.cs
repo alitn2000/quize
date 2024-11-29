@@ -12,7 +12,7 @@ using Quize2.Db;
 namespace Quize2.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241129075730_init")]
+    [Migration("20241129122735_init")]
     partial class init
     {
         /// <inheritdoc />

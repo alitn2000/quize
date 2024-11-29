@@ -150,3 +150,4 @@ D:\c#\HW`S\Quize2\Quize2\obj\Debug\net8.0\refint\Quize2.dll
 D:\c#\HW`S\Quize2\Quize2\obj\Debug\net8.0\Quize2.pdb
 D:\c#\HW`S\Quize2\Quize2\obj\Debug\net8.0\Quize2.genruntimeconfig.cache
 D:\c#\HW`S\Quize2\Quize2\obj\Debug\net8.0\ref\Quize2.dll
+D:\c#\HW`S\Quize2\Quize2\obj\Debug\net8.0\Quize2.sourcelink.json
